@@ -21,10 +21,11 @@ no_index:
     - t
     - xt
 requires:
+  Exporter::Lite: 0
   JSON: 0
   Test::Deep: 0
   perl: 5.8.1
 resources:
   license: http://dev.perl.org/licenses/
   repository: git://github.com/motemen/Test-Deep-JSON.git
-version: 0.01
+version: 0.02
