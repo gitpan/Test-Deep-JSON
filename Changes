@@ -1,5 +1,9 @@
 Revision history for Perl extension Test::Deep::JSON
 
+0.03 2014-02-27T00:40:59Z
+        - fixed diagnostics message when matcher inside json() failed
+          (RT #93273, thanks to ETHER)
+
 0.02    Thu Oct  4 10:42:36 JST 2012
         - fixed wrong dependencies
 

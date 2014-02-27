@@ -6,10 +6,11 @@ build_requires:
   ExtUtils::MakeMaker: 6.59
   Test::More: 0
 configure_requires:
-  ExtUtils::MakeMaker: 6.59
-distribution_type: module
-dynamic_config: 1
-generated_by: 'Module::Install version 1.06'
+  CPAN::Meta: 0
+  CPAN::Meta::Prereqs: 0
+  Module::Build: 0.38
+dynamic_config: 0
+generated_by: 'Minilla/v0.11.0, CPAN::Meta::Converter version 2.131560'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -17,15 +18,25 @@ meta-spec:
 name: Test-Deep-JSON
 no_index:
   directory:
-    - inc
     - t
     - xt
+    - inc
+    - share
+    - eg
+    - examples
+    - author
+    - builder
+provides:
+  Test::Deep::JSON:
+    file: lib/Test/Deep/JSON.pm
+    version: 0.03
 requires:
   Exporter::Lite: 0
   JSON: 0
   Test::Deep: 0
-  perl: 5.8.1
+  perl: 5.008001
 resources:
-  license: http://dev.perl.org/licenses/
-  repository: git://github.com/motemen/Test-Deep-JSON.git
-version: 0.02
+  bugtracker: https://github.com/motemen/Test-Deep-JSON/issues
+  homepage: https://github.com/motemen/Test-Deep-JSON
+  repository: git://github.com/motemen/Test-Deep-JSON
+version: 0.03
